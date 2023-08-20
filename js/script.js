@@ -36,7 +36,7 @@ function clickHandler(data){
 // 20% Discount .
 function getDiscount(){
     const inputValue = document.getElementById('cuppon-input').value;
-    if(inputValue !== "SELL20"){
+    if(inputValue !== "SELL200"){
         alert('Your Purchase not above TK 200!!!');
     }
     else{
@@ -50,6 +50,7 @@ function getDiscount(){
 function resetData(data){
     document.getElementById('select-items-container').innerHTML="";
     setElementInnertext('set-total-price', "0.00");
+    setElementInnertext('discount', "00")
     setElementInnertext('set-total', "0.00");
     const inputValue = document.getElementById('cuppon-input').value = "";
 };
