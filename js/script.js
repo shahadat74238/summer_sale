@@ -48,10 +48,6 @@ function getDiscount(){
 };
 // Reset Data.
 function resetData(data){
-    document.getElementById('select-items-container').innerHTML="";
-    setElementInnertext('set-total-price', "0.00");
-    setElementInnertext('discount', "00")
-    setElementInnertext('set-total', "0.00");
-    const inputValue = document.getElementById('cuppon-input').value = "";
+    window.location.reload();
 };
 
